@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            admin
+        </title>
+        <link rel='stylesheet' href='/stylesheets/style.css'>
+    </head>
+    <body>
+        <button id='showpizza' type='button'>show list of pizzas</button>
+        <button id='addpizza' type='button'>add pizza</button>
+        <button id='edit' type='button'>edit pizza</button>
+        <button id='delete' type='button'>delete pizza</button>
+        <div id='view'>
+            <div id='addition' class='view'>
+                <span>name of pizza:</span>
+                <input type='text' id='newpizza'>
+                <p>price of pizza:</p><br>
+                <span>small</span>
+                <input id='small' type='text' class = 'price'>
+                <span>medium</span>
+                <input id='medium' type='text' class = 'price'>
+                <span>large</span>
+                <input id='large' type='text' class = 'price'>
+                <button type='button' id='submit'>submit</button>
+            </div>
+            <div id='list' class='view'>
+                
+            </div>
+        </div>
+        <button id='showtoppings' type='button'>show list of toppings</button>
+        <button id='addtoppings' type='button'>add toppings</button>
+        <button id='edittoppings' type='button'>edit toppings</button>
+        <button id='deletetoppings' type='button'>delete toppings</button>
+        <div id='topview'>
+            <div id='topadd' class = 'view'>
+                <span>name of topping:</span>
+                <input type='text' id='newtopping'>
+                <p>price of topping:</p>
+                <input type='text' id='topprice'>
+                <button type='button' id='topsubmit'>submit</button>
+            </div>
+            <div id='toplist' class='view'>
+                
+            </div>
+        </div>
+    
+    </body>
+    <script src='/javascripts/admin.js'></script>
+    <script src='/javascripts/toppings.js'></script>
+</html>

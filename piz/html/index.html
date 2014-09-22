@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            pizzeria
+        </title>
+        <link rel='stylesheet' href='/stylesheets/index.css'>
+    </head>
+    <body>
+        <h1>ONLINE PIZZA DELIVER</h1>
+        
+        <form id='details'>
+            <h2>Personal Information</h2>
+            <span>name :</span>
+            <input class='in' id='username' type='text' name='username'>
+            <span>Phone number :</span>
+            <input class='in' id='phno' type='text' name='phonenumber'>
+            <span>Address</span>
+            <input class='in' id='address' placeholder='enter your address here...'></textarea>
+            <h2>Order Information</h2>
+            <span>Order date :</span>
+            <input class='in' type="date" name="orderdate" placeholder='dd/mm/yyyy'>
+            <span>Order time :</span>
+            <input class='in' type='time' name='ordertime' placeholder='hh:mm'>
+            <span>no of orders:</span>
+            <input class='in' type='number' id='nooforders'>
+            <h2>Pizza Information</h2>
+            <p>Select pizza:</p>
+            <select class='in' id='pizza'>
+                <option value="Veg Treat">Veg Treat</option>
+                <option value="Italian Treat">Italian Treat</option>
+                <option value="Super Treat">Super Treat</option>
+                <option value="Classic Cheese">Classic Cheese</option>
+            </select>
+            <p>Size:</p>
+            <input type='radio' name='size' value='small'><span>small</span>
+            <input type='radio' name='size' value='medium'><span>medium</span>
+            <input type='radio' name='size' value='large'><span>large</span>
+            <p>Toppings:</p>
+            <div id='toplisthtml'>
+            <input type='checkbox' name='toppings' value='ExtraCheese'><span>Extra Cheese</span>
+            <input type='checkbox' name='toppings' value='Mushrooms'><span>Mushrooms</span>
+            <input type='checkbox' name='toppings' value='BlackOlives'><span>Black Olives</span>
+            <input type='checkbox' name='toppings' value='Onions'><span>Onions</span>
+            <input type='checkbox' name='toppings' value='GreenPeppers'><span>Green Peppers</span>
+            <input type='checkbox' name='toppings' value='Tomatoes'><span>Tomatoes</span>
+            <input type='checkbox' name='toppings' value='Pepperoni'><span>Pepperoni</span>
+            <input type='checkbox' name='toppings' value='Salami'><span>Salami</span>
+            <input type='checkbox' name='toppings' value='Sausage'><span>Sausage</span>
+            <input type='checkbox' name='toppings' value='Shrimp'><span>Shrimp</span>
+            <input type='checkbox' name='toppings' value='Anchovies'><span>Anchovies</span>
+            </div>
+            <p>Special Information:</p>
+            <textarea class='in' id='specialinfo' form='details' rows='4' cols='100' placeholder='Enter Your Special Information Here...'></textarea><br>
+            <a href='#displaymodal' class='buttn' id='ordercomplete'>Order Complete</a>
+        </form>
+        <div id='displaymodal'>
+            <div id='modalcontent'>
+                <h2 id='total'>Total price :</h2><br>
+                <div id='tablecontainer'>
+                <table id='listoforders'>
+                    <tr id='headingoforders'>
+                        <th>sr.no</th>
+                        <th>pizza</th>
+                        <th>no of orders</th>
+                        <th>toppings</th>
+                        <th>price</th>
+                    </tr>
+                </table>
+                </div>
+                <div id='buttons'>
+                <a href='' id='deliver' class='buttn'>Deliver</a>
+                
+                <a href='' id='orderedit' class='buttn'>Edit</a>
+                <a href='' id='orderdelete' class='buttn'>Delete</a>
+                <a href='' id='anotherorder' class='buttn'>Place another order</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src='/javascripts/script.js'></script>
+</html>
